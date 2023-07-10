@@ -1,0 +1,226 @@
+.mainContainer {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, #0a5e81, #1d0349);
+}
+
+
+.todomaincontainer {
+    position: relative;
+    box-sizing: border-box;
+    margin: 10vh 15vw;
+    height: 80vh;
+    width: 70%;
+    background-color: #161313;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 2px rgb(0, 0, 0);
+}
+
+.header {
+    position: relative;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addSec {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.headertitle p {
+    font-size: 2rem;
+    font-weight: 400;
+
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+.inputbox input {
+    height: 6vh;
+    width: 30vw;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 4px 4px rgb(211, 214, 200);
+    padding-left: 1vw;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+.inputbox input:hover {
+    border: 1px solid rgb(31, 107, 173);
+    box-sizing: border-box;
+    box-shadow: 5px 5px powderblue;
+}
+
+.addSec button {
+    width: 6vw;
+    height: 6vh;
+    background-color: rgb(71, 168, 253);
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-style: oblique;
+    border: 1px solid rgb(20, 20, 207);
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.addSec button:hover {
+    background-color: #13af1f;
+    
+    border: 1px solid pink;
+}
+
+.body {
+
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.bodytext {
+    position: relative;
+    margin-top: -3vh;
+    margin-bottom: -2vh;
+    margin-left: 1%;
+    color: white;
+    width: 100%;
+
+    font-style: oblique;
+    font-size: 2rem;
+
+}
+
+.todosContainer {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px 0px 20px 0px;
+    gap: 0.8vh;
+    padding-top: 2vh;
+    overflow-y: scroll;
+}
+
+.todosContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.todos {
+    position: relative;
+    height: 6vh;
+    width: 98%;
+    left: 1%;
+
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: rgb(13, 10, 10);
+    border: 0.1px solid rgb(93, 239, 93);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.todos:hover {
+    box-shadow: 1px 1px rgb(11, 148, 173);
+}
+
+.title {
+    position: relative;
+    width: 80%;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+
+    margin-top: -2vh;
+    text-overflow: clip;
+}
+
+.title::-webkit-scrollbar {
+    display: none;
+}
+
+.title p {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    font-family: auto;
+    margin-left: 1vw;
+    color: #ded6d6;
+}
+
+
+.btndiv {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.editclass button {
+    position: relative;
+    height: 4vh;
+    width: 8vh;
+    border-radius: 20px;
+
+
+    background-color: rgb(250, 253, 251);
+    border: 1px solid rgb(255, 255, 255);
+    color:black;
+
+    top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.editclass button:hover {
+    background-color:powderblue;
+    border: 1px solid rgb(34, 220, 83);
+    color: black;
+}
+
+.deleteclass button {
+    position: relative;
+    height: 4vh;
+    width: 8vh;
+    border-radius: 20px;
+    background-color: rgb(221, 42, 42);
+    border: 1px solid rgb(221, 42, 42);
+    color: white;
+    top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.deleteclass button:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(221, 42, 42);
+}
